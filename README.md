@@ -41,6 +41,11 @@ If it fails stringent test, the test engineer will run the stringent test on lim
 
 download pre-built virtual machine from http://bit.ly/iss-vm
 
+Open jbpm-server
+(Running with jbpm server 7.16 zip file is attached)
+
+Create space "individual" in Business Central.
+
 start iss-vm
 
 open terminal in iss-vm
@@ -52,7 +57,8 @@ https://github.com/optimusium/ISSProj/blob/master/DRAMCustomerReturn.zip
 
 Create any space. Run 
 file:///home/iss-user/DRAMCustomerReturn
-Running with jbpm-server 7.16
+
+Import the project to space "individual" in Business Central.
 
 ---
 
