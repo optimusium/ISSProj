@@ -1,0 +1,14 @@
+package com.individual.dramcustomerreturn;
+
+import java.lang.Number;
+
+rule "ProductionYieldCheck"
+	dialect "mvel"
+	ruleflow-group "ProductionYieldCheck"
+	when
+		productionOverkillA : productionOverkill( productionOverkillPercent <= 0.5 )
+	then
+		ProductionYield fact0 = new ProductionYield();
+		fact0.setProductionYieldOK( true );
+		insert( fact0 );
+end

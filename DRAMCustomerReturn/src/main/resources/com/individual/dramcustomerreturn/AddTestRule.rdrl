@@ -1,0 +1,14 @@
+package com.individual.dramcustomerreturn;
+
+import java.lang.Number;
+
+rule "AddTestRule"
+	dialect "mvel"
+	ruleflow-group "AddTestRule"
+	when
+		stringentFlowA : stringentFlow( stringentFlowPassFail == false )
+	then
+		addTest fact0 = new addTest();
+		fact0.setAddTesting( true );
+		insert( fact0 );
+end

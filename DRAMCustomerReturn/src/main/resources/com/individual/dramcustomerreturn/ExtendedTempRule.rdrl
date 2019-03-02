@@ -1,0 +1,14 @@
+package com.individual.dramcustomerreturn;
+
+import java.lang.Number;
+
+rule "ExtendedTempRule"
+	dialect "mvel"
+	ruleflow-group "ExtendedTempRule"
+	when
+		extendedTemperatureA : extendedTemperature( extendedTemperaturePassFail == false )
+	then
+		outOfTemp fact0 = new outOfTemp();
+		fact0.setOutOfTemperature( true );
+		insert( fact0 );
+end

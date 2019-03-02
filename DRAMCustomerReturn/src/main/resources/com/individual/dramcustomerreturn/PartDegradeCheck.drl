@@ -1,0 +1,26 @@
+package com.individual.dramcustomerreturn;
+
+rule "PartDegradeCheck_1"
+    dialect "mvel"
+	ruleflow-group "PartDegradeCheck"
+	when 
+		flowRerunResultA : flowRerunResult(rerunPassFail == false)
+		pastPartHistoryA : pastPartHistory(passFail == true)
+		flowChangeA : flowChange(flowChanged == true)
+	then 
+		guardbanded $var0 = new guardbanded();
+		$var0.setGuardband( true );
+		insert( $var0 );
+end
+rule "trial_1"
+	dialect "mvel"
+	ruleflow-group "PartDegradeCheck"
+	when 
+		flowRerunResultA : flowRerunResult(rerunPassFail == false)
+		pastPartHistoryA : pastPartHistory(passFail == true)
+		flowChangeA : flowChange(flowChanged == false)
+	then 
+		degrader $var0 = new degrader();
+		$var0.setDegraded( true );
+		insert( $var0 );
+end
