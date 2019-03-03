@@ -42,7 +42,7 @@ If it fails stringent test, the test engineer will run the stringent test on lim
 download pre-built virtual machine from http://bit.ly/iss-vm
 
 Open jbpm-server
-(Running with jbpm server 7.16 zip file in case 7.12 is not working. Zip file is available at https://drive.google.com/open?id=1yTv9wW7Coz9b0nzkhAZgn1Q02Xl7EOO. Run ~/jbpm-server/bin/standalone.sh)
+(Running with jbpm server 7.16 zip file in case 7.12 is not working. Zip file is available at https://drive.google.com/file/d/1yTv9wW7Coz9b0nzkhAZgn1Q02Xl7EOOK/view . Run ~/jbpm-server/bin/standalone.sh)
 
 Create space "individual" in Business Central.
 
