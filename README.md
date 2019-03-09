@@ -44,8 +44,6 @@ download pre-built virtual machine from http://bit.ly/iss-vm
 Open jbpm-server
 (Running with jbpm server 7.16 zip file in case 7.12 is not working. Zip file is available at https://drive.google.com/file/d/1yTv9wW7Coz9b0nzkhAZgn1Q02Xl7EOOK/view . Run ~/jbpm-server/bin/standalone.sh)
 
-Create space "individual" in Business Central.
-
 start iss-vm
 
 open terminal in iss-vm
@@ -55,10 +53,10 @@ $ git clone https://github.com/optimusium/ISSProj
 Getting zip file. Unzip the zip file.
 https://github.com/optimusium/ISSProj/blob/master/DRAMCustomerReturn.zip
 
-Create any space. Run 
+Create space "individual". Import the project to space "individual" in Business Central using the following path
 file:///home/iss-user/DRAMCustomerReturn
 
-Import the project to space "individual" in Business Central.
+
 
 ---
 
