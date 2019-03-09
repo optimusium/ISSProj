@@ -56,7 +56,10 @@ https://github.com/optimusium/ISSProj/blob/master/DRAMCustomerReturn.zip
 Create space "individual". Import the project to space "individual" in Business Central using the following path
 file:///home/iss-user/DRAMCustomerReturn
 
-
+Create user (with password the same)
+QA
+TestEngineer
+DRAMSales
 
 ---
 
